@@ -3,9 +3,9 @@ from typing import List
 from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from db.db import get_session
-from flashcard import service
-from flashcard.schemas import FlashcardTopicCreateRequestDto, FlashcardTopicResponseDto, FlashcardResponseDto, \
+from src.db.db import get_session
+from src.flashcard import service
+from src.flashcard.schemas import FlashcardTopicCreateRequestDto, FlashcardTopicResponseDto, FlashcardResponseDto, \
     FlashcardCreateRequestDto
 
 flashcard_router = APIRouter()

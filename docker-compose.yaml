@@ -9,7 +9,15 @@ services:
       PGDATA: /var/lib/postgres/data/pgdata
     ports:
       - "5432:5432"
-
+  app:
+    build: .
+    container_name: quiz_app
+    depends_on:
+      - postgres
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
 volumes:
   pgdata:
     driver: local

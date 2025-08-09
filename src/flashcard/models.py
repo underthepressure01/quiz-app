@@ -4,7 +4,7 @@ from sqlalchemy import Column, String, ForeignKey
 from sqlalchemy.dialects.postgresql.base import UUID
 from sqlalchemy.orm import relationship
 
-from db.db import Base
+from src.db.db import Base
 
 #TODO: rename flashcard to flashcards and use schemas
 class FlashcardTopic(Base):

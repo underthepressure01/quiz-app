@@ -2,9 +2,9 @@ from uuid import UUID
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from flashcard import repo
-from flashcard.models import FlashcardTopic, Flashcard
-from flashcard.schemas import FlashcardTopicResponseDto, FlashcardResponseDto, FlashcardTopicCreateRequestDto, \
+from src.flashcard import repo
+from src.flashcard.models import FlashcardTopic, Flashcard
+from src.flashcard.schemas import FlashcardTopicResponseDto, FlashcardResponseDto, FlashcardTopicCreateRequestDto, \
     FlashcardCreateRequestDto
 
 

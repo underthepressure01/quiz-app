@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
-from config.config import get_settings
+from src.config.config import get_settings
 
-from flashcard.routes import flashcard_router
+from src.flashcard.routes import flashcard_router
 
 app = FastAPI()
 

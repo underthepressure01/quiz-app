@@ -4,7 +4,7 @@ from uuid import UUID
 from sqlalchemy import select, delete
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from flashcard.models import FlashcardTopic, Flashcard
+from src.flashcard.models import FlashcardTopic, Flashcard
 
 
 async def get_topic_by_id(session: AsyncSession, topic_id) -> FlashcardTopic:
